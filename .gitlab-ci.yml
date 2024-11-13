@@ -9,5 +9,5 @@ test:
   - poetry install -v
   - poetry run tox
 
-tags
-- docker
+tags:
+  - docker
