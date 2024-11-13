@@ -5,5 +5,3 @@ stage:
   - test
 script:
   - echo "Running tests"
-tags:
-  - docker
