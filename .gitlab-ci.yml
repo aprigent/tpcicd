@@ -1,3 +1,5 @@
+stages:
+  - test
 test_job:
 stage: test
 script:
