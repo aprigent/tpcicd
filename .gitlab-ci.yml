@@ -15,15 +15,14 @@ before_script:
   - pip install --upgrade pip
   - pip install build twine
   - pip install hatch
-  - pip install pytest
+
 
 test_job:
   stage: test
   coverage : /TOTAL. * \ s +(\d+\%)$/
   script:
     - echo "Running tests with database service"
-    - hatch test
-    - pytest --cov-config=pyproject.toml --cov=pkg --cov=tests --no-cov
+    - hatch test --cover
 
   tags:
     - docker
