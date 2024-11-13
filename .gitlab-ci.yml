@@ -1,7 +1,6 @@
 
 
 job_with_runner:
-stage: 
-  - test
+stage: test
 script:
   - echo "Running tests"
