@@ -2,7 +2,7 @@
 
 job_with_runner:
 stage: 
-test
+- test
 script:
 - echo "Running tests"
 tags:
