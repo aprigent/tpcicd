@@ -1,12 +1,25 @@
 image : python:3.11
 stages:
   - test
-image : ubuntu:latest
+
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+
+cache:
+  paths:
+    - .pip-cache/
+
+before_script:
+  - python --version
+  - pip install --upgrade pip
+  - pip install build twine
+  - pip install hatch
+
 test_job:
   stage: test
   script:
     - echo "Running tests with database service"
-    - run pip install hatch
     - hatch test
   tags:
     - docker
