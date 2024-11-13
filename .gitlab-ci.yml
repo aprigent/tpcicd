@@ -1,6 +1,6 @@
 stages:
   - test
 test_job:
-stage: test
-script:
-- echo "Running tests with database service"
+  stage: test
+  script:
+  - echo "Running tests with database service"
