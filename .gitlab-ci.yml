@@ -5,5 +5,5 @@ test_job:
   script:
   - echo "Running tests with database service"
   - hatch test
-  tags:
+  tags
   -docker
