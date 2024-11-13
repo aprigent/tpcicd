@@ -1,7 +1,4 @@
-
-job_with_runner:
+test_job:
 stage: test
 script:
-  - echo "Running x tests"
-tags:
-  - docker
+- echo "Running tests with database service"
