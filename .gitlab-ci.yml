@@ -5,6 +5,7 @@ test_job:
   stage: test
   script:
     - echo "Running tests with database service"
+    - pip install hatch
     - hatch test
   tags:
     - docker
