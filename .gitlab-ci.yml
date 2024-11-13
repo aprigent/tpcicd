@@ -1,9 +1,10 @@
 stages:
   - test
+image : ubuntu:latest
 test_job:
   stage: test
   script:
     - echo "Running tests with database service"
     - hatch test
   tags:
-    -docker
+    - docker
