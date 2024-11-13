@@ -1,13 +1,9 @@
-image: python:3.11.4
-stages:
-  - test
 
-test:
-  stage: test
-  script:
-  - pip install poetry
-  - poetry install -v
-  - poetry run tox
 
+job_with_runner:
+stage: 
+test
+script:
+- echo "Running tests"
 tags:
-  - docker
+- docker
