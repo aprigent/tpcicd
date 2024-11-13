@@ -4,3 +4,4 @@ test_job:
   stage: test
   script:
   - echo "Running tests with database service"
+  - hatch test

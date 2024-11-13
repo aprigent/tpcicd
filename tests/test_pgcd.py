@@ -19,6 +19,8 @@ class TestPGCDFunction(unittest.TestCase):
         result = pgcd(1024, 256)
         self.assertEqual(result, 256)
 
-
+    def test_pgcd_5(self):
+        result = pgcd(2048, 256)
+        self.assertEqual(result, 256)
 if __name__ == '__main__':
     unittest.main()
