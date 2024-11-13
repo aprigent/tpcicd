@@ -2,8 +2,8 @@
 
 job_with_runner:
 stage: 
-- test
+  - test
 script:
-- echo "Running tests"
+  - echo "Running tests"
 tags:
-- docker
+  - docker
