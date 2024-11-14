@@ -26,6 +26,7 @@ test_job:
     - hatch test --cover
     - coverage report -m 
     - coverage xml
+    - hatch build -t wheel
   artifacts:
     reports:
       coverage_report:
