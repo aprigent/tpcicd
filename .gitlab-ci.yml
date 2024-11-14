@@ -23,6 +23,12 @@ test_job:
   script:
     - echo "Running tests with database service"
     - hatch test --cover
+    - pytest --cov=my-arithmetic2-aprigent --cov-report=xml
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
 
   tags:
     - docker
