@@ -15,6 +15,7 @@ before_script:
   - pip install --upgrade pip
   - pip install build twine
   - pip install hatch
+  - pip install pytest-cov
 
 
 test_job:
